@@ -4,7 +4,7 @@
   "description": "![Design preview for the Project tracking intro component coding challenge](./design/desktop-preview.jpg)",
   "main": "dist/app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node server.js"
   },
   "repository": {
     "type": "git",
