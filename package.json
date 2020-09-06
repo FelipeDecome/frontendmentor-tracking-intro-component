@@ -1,0 +1,26 @@
+{
+  "name": "frontendmentor-tracking-intro-component",
+  "version": "1.0.0",
+  "description": "![Design preview for the Project tracking intro component coding challenge](./design/desktop-preview.jpg)",
+  "main": "dist/app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FelipeDecome/frontendmentor-tracking-intro-component.git"
+  },
+  "author": "Felipe Decome <felipe.decome@hotmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/FelipeDecome/frontendmentor-tracking-intro-component/issues"
+  },
+  "homepage": "https://github.com/FelipeDecome/frontendmentor-tracking-intro-component#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "webpack": "^4.44.1",
+    "webpack-cli": "^3.3.12"
+  }
+}

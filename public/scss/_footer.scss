@@ -1,0 +1,26 @@
+.attribution {
+  position: fixed;
+  bottom: 0;
+  @include flex(column, center, center, 0.8rem);
+
+  padding: 1.6rem 0;
+  width: 100%;
+
+  background: $texts;
+  color: $blue;
+
+  p > a {
+    font-weight: bold;
+    color: $very-dark-blue;
+
+    @include transition(all 0.2s);
+
+    &:hover {
+      font-size: 1.8rem;
+    }
+  }
+
+  @include response-above(md) {
+    flex-direction: row;
+  }
+}
