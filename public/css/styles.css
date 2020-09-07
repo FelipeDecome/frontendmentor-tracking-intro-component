@@ -102,6 +102,29 @@
   padding-top: 3.2rem;
 }
 
+.hero__container {
+  margin-top: 6.4rem;
+  overflow: hidden;
+  width: 100%;
+}
+.hero__container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 50%;
+  height: 42.5rem;
+  background: #eef3f6;
+  z-index: -1;
+  -moz-border-radius: 0 0 0 6.4rem;
+  -webkit-border-radius: 0 0 0 6.4rem;
+  border-radius: 0 0 0 6.4rem;
+}
+.hero__container .hero__image {
+  margin-left: -2rem;
+  max-width: 50.8rem;
+}
+
 .attribution {
   position: fixed;
   bottom: 0;
@@ -132,9 +155,11 @@
   }
 }
 
-.landing-container {
+.landing__container {
+  position: relative;
   width: 100%;
   padding: 0 3.2rem;
+  z-index: 2;
 }
 
 /*# sourceMappingURL=styles.css.map */

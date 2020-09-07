@@ -5,9 +5,15 @@
 
 @import "header/header";
 
+@import "hero/hero";
+
 @import "footer/footer";
 
-.landing-container {
+.landing__container {
+  position: relative;
+
   width: 100%;
   padding: 0 3.2rem;
+
+  z-index: 2;
 }
