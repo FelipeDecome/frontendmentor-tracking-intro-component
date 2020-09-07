@@ -4,7 +4,9 @@
   "description": "![Design preview for the Project tracking intro component coding challenge](./design/desktop-preview.jpg)",
   "main": "dist/app.js",
   "scripts": {
-    "start": "node server.js"
+    "start": "node server.js",
+    "build": "webpack",
+    "prod": "node dist/app.js"
   },
   "repository": {
     "type": "git",
