@@ -6,6 +6,8 @@
     border: 0;
     background: transparent;
 
+    cursor: pointer;
+
     .navigation__hamburguer {
       width: 2.4rem;
       height: 0.2rem;
@@ -17,7 +19,7 @@
     // * Navigation Hamburguer animation
     &:focus {
       .navigation__hamburguer {
-        background: $button-hover;
+        background: $button;
 
         &:first-child {
           @include transform(
