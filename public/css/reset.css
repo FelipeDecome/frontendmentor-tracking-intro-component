@@ -9,7 +9,6 @@
   outline: 0;
   text-decoration: none;
   list-style: none;
-  color: inherit;
 }
 
 html,
@@ -21,6 +20,11 @@ body,
 
 body {
   font: 500 1.8rem Barlow;
+}
+
+#root {
+  display: flex;
+  justify-content: center;
 }
 
 @media (min-width: 768px) {

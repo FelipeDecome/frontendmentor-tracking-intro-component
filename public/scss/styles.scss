@@ -1,1 +1,13 @@
-@import "footer";
+@import "variables";
+@import "mixins";
+@import "mixins_breakpoints";
+@import "mixins-cross-browser";
+
+@import "header/header";
+
+@import "footer/footer";
+
+.landing-container {
+  width: 100%;
+  padding: 0 3.2rem;
+}

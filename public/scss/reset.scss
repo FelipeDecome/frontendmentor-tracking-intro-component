@@ -14,7 +14,6 @@
 
   text-decoration: none;
   list-style: none;
-  color: inherit;
 }
 
 html,
@@ -26,6 +25,10 @@ body,
 
 body {
   font: 500 1.8rem Barlow;
+}
+
+#root {
+  @include flex(null, center);
 }
 
 @include response-above(md) {

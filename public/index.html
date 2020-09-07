@@ -11,15 +11,56 @@
       href="./images/favicon-32x32.png"
     />
 
+    <link href="https://fonts.googleapis.com/css2?family=Barlow&family=Barlow+Condensed:wght@400;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/styles.css">
+
     <title>Frontend Mentor | Project tracking intro component</title>
 
     </style>
   </head>
   <body>
 
-    <div id="root"></div>
+    <div id="root">
+      <div class="landing-container">
+        <header class="header">
+          <svg class="brand" xmlns="http://www.w3.org/2000/svg" width="32" height="32" aria-labelledby="brand">
+            <title id="brand"></title>
+            <path d="M0 32V.241h23.041zM31.15 32V.241h-4.411L17.48 13.158zM3.645 32l11.854-15.879L27.353 32z"/>
+          </svg>
+          <div class="navigation">
+            <div id="collapse-button" tabindex="0" aria-target="#navigation-collapsable" class="navigation__collapse">
+              <span class="navigation__hamburguer"></span>
+              <span class="navigation__hamburguer"></span>
+              <span class="navigation__hamburguer"></span>
+            </div>
 
-    
+            <nav class="navigation__container" role="navigation" id="navigation-collapsable">
+              <ul class="navigation__list">
+                <li class="navigation__item">
+                  <a href="#" class="navigation__link">PRODUCT</a>
+                </li>
+
+                <li class="navigation__item">
+                  <a href="#" class="navigation__link">FEATURES</a>
+                </li>
+
+                <li class="navigation__item">
+                  <a href="#" class="navigation__link">PRICING</a>
+                </li>
+
+                <li class="navigation__divisor"></li>
+                
+                <li class="navigation__item">
+                  <a href="#" class="navigation__link">LOGIN</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </header>
+      </div>
+    </div>
 
     <footer class="attribution">
         <p>
@@ -43,5 +84,22 @@
           >.
         </p>
       </footer>
+
+      <script>
+
+        const buttonCollapse = document.querySelector("#collapse-button")
+        buttonCollapse.addEventListener("click", handleClick);
+        
+        let buttonCollapseState = false;
+
+        function handleClick(e) {
+
+          if(!buttonCollapseState) {
+            buttonCollapse.blur();
+          }
+
+          buttonCollapseState = !buttonCollapseState
+        }
+      </script>
   </body>
 </html>
