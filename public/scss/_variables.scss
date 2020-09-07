@@ -1,13 +1,14 @@
 // Colors
+$button: hsl(360, 100%, 68%);
+$button-hover: hsl(0, 100%, 76%);
+$titles: hsl(230, 29%, 20%);
+$texts: hsl(230, 11%, 40%);
+$texts-complement: hsl(231, 7%, 65%);
+$complement: hsl(207, 33%, 95%);
+$background: hsl(0, 100%, 100%);
+$icons: hsl(210, 2%, 20%);
 
-$texts: #ffffff;
-$icons: #697ed4;
-
-$pale-blue: hsl(243, 100%, 93%);
-$grayish-blue: hsl(229, 7%, 55%);
-$blue: hsl(227, 57, 18, 100%);
-$dark-blue: hsl(228, 56%, 26%);
-$very-dark-blue: hsl(229, 57%, 11%);
-
-$bar-first-color: hsl(6, 100%, 80%);
-$bar-second-color: hsl(335, 100%, 65%);
+$footer-text: $texts;
+$footer-links: $titles;
+$footer-links-hover: $button;
+$footer-background: $background;

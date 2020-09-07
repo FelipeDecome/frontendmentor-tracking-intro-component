@@ -6,17 +6,19 @@
   padding: 1.6rem 0;
   width: 100%;
 
-  background: $texts;
-  color: $blue;
+  font-size: 1.6rem;
+  background: $footer-background;
+  color: $footer-text;
 
   p > a {
     font-weight: bold;
-    color: $very-dark-blue;
+    color: $footer-links;
 
     @include transition(all 0.2s);
 
     &:hover {
-      font-size: 1.8rem;
+      font-size: 2rem;
+      color: $footer-links-hover;
     }
   }
 
