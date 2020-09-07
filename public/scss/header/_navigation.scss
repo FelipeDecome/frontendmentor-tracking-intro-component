@@ -2,6 +2,7 @@
   .navigation__collapse {
     @include flex(column, null, null, 0.5rem);
 
+    padding: 0.8rem 0.4rem;
     border: 0;
     background: transparent;
 
