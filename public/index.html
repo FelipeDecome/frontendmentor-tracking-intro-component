@@ -99,9 +99,12 @@
 
       buttonCollapse.onfocus = toggleState;
       buttonCollapse.onblur = toggleState;
+      buttonCollapse.onmousedown = e => e.preventDefault();
       buttonCollapse.onclick = () => {
         if (buttonCollapseState) {
           buttonCollapse.blur();
+        } else {
+          buttonCollapse.focus();
         }
       };
 
