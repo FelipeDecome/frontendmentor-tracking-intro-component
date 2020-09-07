@@ -38,11 +38,7 @@
             />
           </svg>
           <div class="navigation">
-            <button
-              id="collapse-button"
-              tabindex="0"
-              class="navigation__collapse"
-            >
+            <button id="collapse-button" class="navigation__collapse">
               <span class="navigation__hamburguer"></span>
               <span class="navigation__hamburguer"></span>
               <span class="navigation__hamburguer"></span>
@@ -99,17 +95,18 @@
 
     <script>
       const buttonCollapse = document.querySelector("#collapse-button");
-      buttonCollapse.addEventListener("click", handleClick);
-
       let buttonCollapseState = false;
 
-      function handleClick() {
-        if (!buttonCollapseState) {
+      buttonCollapse.onfocus = toggleState;
+      buttonCollapse.onblur = toggleState;
+      buttonCollapse.onclick = () => {
+        if (buttonCollapseState) {
           buttonCollapse.blur();
         }
+      };
 
+      function toggleState() {
         buttonCollapseState = !buttonCollapseState;
-        buttonCollapse.onblur = () => (buttonCollapseState = false);
       }
     </script>
   </body>
