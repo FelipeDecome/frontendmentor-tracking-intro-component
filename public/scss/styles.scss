@@ -3,11 +3,74 @@
 @import "mixins_breakpoints";
 @import "mixins-cross-browser";
 
-@import "header/header";
+@import "components/navigation";
 
-@import "footer/footer";
+@import "components/hero";
 
-.landing-container {
+@import "components/texts";
+
+@import "components/footer";
+
+.header {
+  @include flex(null, space-between);
+  position: relative;
+
+  padding-top: 3.2rem;
+
+  .brand {
+    fill: $icons;
+  }
+}
+
+.landing__container,
+.header {
   width: 100%;
-  padding: 0 3.2rem;
+  padding-right: 3.2rem;
+  padding-left: 3.2rem;
+}
+
+.landing__container {
+  @include flex(column, center, center, 6.4rem);
+
+  padding-bottom: 3.2rem;
+  height: 100%;
+}
+
+@include response-above(md) {
+  .header {
+    padding-top: 4.8rem;
+  }
+
+  .landing__container,
+  .header {
+    width: 60rem;
+    padding-right: 0;
+    padding-left: 0;
+  }
+
+  .landing__container {
+    padding-bottom: 6.4rem;
+  }
+}
+
+@include response-above(lg) {
+  .landing__container {
+    gap: 4.8rem;
+  }
+
+  .landing__container,
+  .header {
+    width: 76.8rem;
+  }
+}
+
+@include response-above(xl) {
+  .landing__container {
+    flex-direction: row-reverse;
+  }
+
+  .landing__container,
+  .header {
+    width: 111rem;
+  }
 }

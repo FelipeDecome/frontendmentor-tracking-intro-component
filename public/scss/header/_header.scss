@@ -1,8 +1,0 @@
-@import "navigation";
-
-.header {
-  @include flex(null, space-between);
-  position: relative;
-
-  padding-top: 3.2rem;
-}

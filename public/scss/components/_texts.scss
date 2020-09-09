@@ -1,0 +1,106 @@
+.texts {
+  // margin-top: 8.4rem;
+
+  .texts__container {
+    .texts__sub-heading-container {
+      @include flex(null, flex-start, center, 1.8rem);
+
+      .texts__badge {
+        @include flex(null, center, center);
+
+        width: 4.8rem;
+        height: 2.4rem;
+
+        @include border-radius(1.2rem);
+        background: $icons;
+        color: $text-in-color;
+        @include font(700, 1.6rem, Barlow Condensed);
+      }
+
+      .texts__sub-heading {
+        color: $texts-complement;
+        @include font(400, 1.6rem, Barlow Condensed, 0.6rem);
+      }
+    }
+
+    .texts__heading {
+      margin-top: 1.8rem;
+
+      color: $titles;
+      @include font(700, 4rem, Barlow Condensed, null, 4rem);
+    }
+
+    .texts__main {
+      margin-top: 1.6rem;
+
+      color: $texts;
+    }
+  }
+
+  .texts__button-container {
+    @include flex(null, flex-start, center, 2rem);
+    margin-top: 2.8rem;
+
+    .texts__button {
+      padding: 1.2rem 2.4rem;
+
+      border: 0;
+      color: $text-in-color;
+      background: $button;
+      @include font(700, 1.6rem, Barlow Condensed, 0.1rem);
+      @include border-radius(0.8rem);
+      @include transition(background 0.2s);
+      cursor: pointer;
+
+      &:hover {
+        background: $button-hover;
+      }
+    }
+
+    .texts__button-complement {
+      color: $texts-complement;
+      @include font(400, 1.4rem, Barlow Condensed, 0.2rem);
+    }
+  }
+}
+
+@include response-above(md) {
+  .texts {
+    .texts__heading {
+      font-size: 4.8rem;
+    }
+
+    .texts__button-complement {
+      font-size: 1.6rem;
+      letter-spacing: 0.4rem;
+    }
+  }
+}
+
+@include response-between(md, xl) {
+  .texts {
+    display: grid;
+    grid-template-columns: 36rem 1fr;
+    gap: 6rem;
+
+    .texts__button-container {
+      @include flex(column, center, null, 2.4rem);
+
+      .texts__button {
+        padding: 3.2rem 2.4rem;
+      }
+    }
+  }
+}
+
+@include response-above(xl) {
+  .texts {
+    .texts__heading {
+      font-size: 6.4rem;
+    }
+
+    .texts__button-complement {
+      font-size: 1.8rem;
+    }
+  }
+}

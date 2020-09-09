@@ -23,51 +23,76 @@
   </head>
   <body>
     <div id="root">
-      <div class="landing-container">
-        <header class="header">
-          <svg
-            class="brand"
-            xmlns="http://www.w3.org/2000/svg"
-            width="32"
-            height="32"
-            aria-labelledby="brand"
-          >
-            <title id="brand"></title>
-            <path
-              d="M0 32V.241h23.041zM31.15 32V.241h-4.411L17.48 13.158zM3.645 32l11.854-15.879L27.353 32z"
-            />
-          </svg>
-          <div class="navigation">
-            <button id="collapse-button" class="navigation__collapse">
-              <span class="navigation__hamburguer"></span>
-              <span class="navigation__hamburguer"></span>
-              <span class="navigation__hamburguer"></span>
-            </button>
+      <header class="header">
+        <svg
+          class="brand"
+          xmlns="http://www.w3.org/2000/svg"
+          width="32"
+          height="32"
+          aria-labelledby="brand"
+        >
+          <title id="brand"></title>
+          <path
+            d="M0 32V.241h23.041zM31.15 32V.241h-4.411L17.48 13.158zM3.645 32l11.854-15.879L27.353 32z"
+          />
+        </svg>
+        <div class="navigation">
+          <button id="collapse-button" class="navigation__collapse">
+            <span class="navigation__hamburguer"></span>
+            <span class="navigation__hamburguer"></span>
+            <span class="navigation__hamburguer"></span>
+          </button>
 
-            <nav class="navigation__container" role="navigation">
-              <ul class="navigation__list">
-                <li class="navigation__item">
-                  <a href="#" class="navigation__link">PRODUCT</a>
-                </li>
+          <nav class="navigation__container" role="navigation">
+            <ul class="navigation__list">
+              <li class="navigation__item">
+                <a href="#" class="navigation__link">PRODUCT</a>
+              </li>
 
-                <li class="navigation__item">
-                  <a href="#" class="navigation__link">FEATURES</a>
-                </li>
+              <li class="navigation__item">
+                <a href="#" class="navigation__link">FEATURES</a>
+              </li>
 
-                <li class="navigation__item">
-                  <a href="#" class="navigation__link">PRICING</a>
-                </li>
+              <li class="navigation__item">
+                <a href="#" class="navigation__link">PRICING</a>
+              </li>
 
-                <li class="navigation__divisor"></li>
+              <li class="navigation__divisor"></li>
 
-                <li class="navigation__item">
-                  <a href="#" class="navigation__link">LOGIN</a>
-                </li>
-              </ul>
-            </nav>
+              <li class="navigation__item">
+                <a href="#" class="navigation__link">LOGIN</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+      <main class="landing__container">
+        <aside class="hero__container">
+          <img
+            src="images/illustration-devices.svg"
+            alt="An illustration of a smartphone and a laptop"
+            class="hero__image"
+          />
+        </aside>
+
+        <section class="texts">
+          <div class="texts__container">
+            <div class="texts__sub-heading-container">
+              <span class="texts__badge">NEW</span>
+              <h3 class="texts__sub-heading">MONOGRAPH DASHBOARD</h3>
+            </div>
+            <h1 class="texts__heading">POWERFUL INSIGHTS INTO YOUR TEAM</h1>
+            <p class="texts__main">
+              Project planning and time tracking for agile teams
+            </p>
           </div>
-        </header>
-      </div>
+
+          <div class="texts__button-container">
+            <button class="texts__button">SCHEDULE A DEMO</button>
+            <span class="texts__button-complement">TO SEE A PREVIEW</span>
+          </div>
+        </section>
+      </main>
     </div>
 
     <footer class="attribution">

@@ -24,11 +24,14 @@ body,
 }
 
 body {
-  font: 500 1.8rem Barlow;
+  @include font(400, 1.8rem, Barlow);
 }
 
 #root {
-  @include flex(null, center);
+  @include flex(column, null, center);
+  position: relative;
+
+  overflow: hidden;
 }
 
 @include response-above(md) {
