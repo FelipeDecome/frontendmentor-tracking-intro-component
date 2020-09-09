@@ -19,12 +19,17 @@ body,
 }
 
 body {
-  font: 500 1.8rem Barlow;
+  font-weight: 400;
+  font-size: 1.8rem;
+  font-family: Barlow;
 }
 
 #root {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
 }
 
 @media (min-width: 768px) {

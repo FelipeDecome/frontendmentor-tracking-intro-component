@@ -28,3 +28,27 @@
     @content;
   }
 }
+
+@mixin font(
+  $weight: null,
+  $size: null,
+  $family: null,
+  $letter-spacing: null,
+  $line-height: null
+) {
+  @if $weight {
+    font-weight: $weight;
+  }
+  @if $size {
+    font-size: $size;
+  }
+  @if $family {
+    font-family: $family;
+  }
+  @if $letter-spacing {
+    letter-spacing: $letter-spacing;
+  }
+  @if $line-height {
+    line-height: $line-height;
+  }
+}
