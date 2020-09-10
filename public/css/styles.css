@@ -98,16 +98,24 @@
   }
 }
 @media (min-width: 768px) and (max-width: 991px) {
+  .navigation .navigation__collapse:focus {
+    position: absolute;
+    transform: translateX(-17rem);
+    z-index: 10;
+    -webkit-transition: all 0.4s;
+    transition: all 0.4s;
+  }
   .navigation .navigation__container {
     top: 0;
-    left: 0;
-    padding-top: 6.4rem;
+    left: auto;
+    right: 0;
+    padding-top: 12rem;
     width: 34rem;
     height: 100%;
     display: flex;
     justify-content: center;
-    -webkit-transform: translateX(-34rem);
-    transform: translateX(-34rem);
+    -webkit-transform: translateX(34rem);
+    transform: translateX(34rem);
   }
 }
 @media (min-width: 992px) {
@@ -332,7 +340,7 @@
   justify-content: center;
   align-items: center;
   gap: 6.4rem;
-  padding-bottom: 3.2rem;
+  padding-bottom: 10rem;
   height: 100%;
 }
 

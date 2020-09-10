@@ -123,15 +123,24 @@
 
 @include response-between(md, lg) {
   .navigation {
+    .navigation__collapse {
+      &:focus {
+        position: absolute;
+        transform: translateX(-17rem);
+        z-index: 10;
+        @include transition(all 0.4s);
+      }
+    }
     .navigation__container {
       top: 0;
-      left: 0;
-      padding-top: 6.4rem;
+      left: auto;
+      right: 0;
+      padding-top: 12rem;
 
       width: 34rem;
       height: 100%;
       @include flex(null, center);
-      @include transform(translateX(-34rem));
+      @include transform(translateX(34rem));
     }
   }
 }
