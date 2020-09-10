@@ -121,6 +121,21 @@
   }
 }
 
+@include response-between(md, lg) {
+  .navigation {
+    .navigation__container {
+      top: 0;
+      left: 0;
+      padding-top: 6.4rem;
+
+      width: 34rem;
+      height: 100%;
+      @include flex(null, center);
+      @include transform(translateX(-34rem));
+    }
+  }
+}
+
 @include response-above(lg) {
   .navigation {
     @include flex(null, null, center);
