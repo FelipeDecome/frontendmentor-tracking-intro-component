@@ -3,8 +3,10 @@
     z-index: 8;
 
     .navigation__list {
-      padding: 2.4rem;
       @include flex(column, null, center, 2.4rem);
+
+      padding: 2.4rem;
+      width: 100%;
 
       .navigation__item {
         position: relative;
@@ -27,14 +29,14 @@
         &::after {
           content: "";
           position: absolute;
-          bottom: -0.2rem;
+          bottom: 0;
           left: 0;
 
           width: 100%;
           height: 0.2rem;
           background: transparent;
 
-          @include transition(all 0.2s);
+          @include transition(all 0.4s);
         }
 
         &:hover::after {
@@ -44,9 +46,9 @@
 
       .navigation__divisor {
         width: 100%;
-        height: 0.1rem;
+        height: 0.2rem;
 
-        background: $texts-complement;
+        background: $complement;
       }
     }
   }
@@ -68,7 +70,7 @@
         height: 0.2rem;
 
         background: $icons;
-        @include transition(#{transform 0.2s, opacity 0.2s});
+        @include transition(#{transform 0.8s, opacity 0.8s});
       }
 
       // * Navigation Hamburguer animation
@@ -117,7 +119,7 @@
 
       // * Animation Opening and Closing
       opacity: 0;
-      @include transition(all 0.4s 0.2s);
+      @include transition(all 0.8s 0.2s);
       @include transform(translateY(-40rem));
     }
   }
@@ -130,7 +132,7 @@
         position: absolute;
         transform: translateX(-17rem);
         z-index: 10;
-        @include transition(all 0.4s);
+        @include transition(all 0.8s);
       }
     }
     .navigation__container {
