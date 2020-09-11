@@ -19,6 +19,9 @@
     <link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" href="css/styles.css" />
 
+    <!-- AOS STYLESHEET -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
     <title>Frontend Mentor | Project tracking intro component</title>
   </head>
   <body>
@@ -69,13 +72,20 @@
       <main class="landing__container">
         <aside class="hero__container">
           <img
+            data-aos="zoom-in-left"
+            data-aos-duration="1600"
             src="images/illustration-devices.svg"
             alt="An illustration of a smartphone and a laptop"
             class="hero__image"
           />
         </aside>
 
-        <section class="texts">
+        <section
+          class="texts"
+          data-aos="fade-right"
+          data-aos-duration="1600"
+          data-aos-delay="600"
+        >
           <div class="texts__container">
             <div class="texts__sub-heading-container">
               <span class="texts__badge">NEW</span>
@@ -124,7 +134,7 @@
 
       buttonCollapse.onfocus = toggleState;
       buttonCollapse.onblur = toggleState;
-      buttonCollapse.onmousedown = e => e.preventDefault();
+      buttonCollapse.onmousedown = (e) => e.preventDefault();
       buttonCollapse.onclick = () => {
         if (buttonCollapseState) {
           buttonCollapse.blur();
@@ -136,6 +146,12 @@
       function toggleState() {
         buttonCollapseState = !buttonCollapseState;
       }
+    </script>
+
+    <!-- AOS SCRIPT -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
     </script>
   </body>
 </html>

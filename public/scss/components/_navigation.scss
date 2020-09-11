@@ -1,5 +1,7 @@
 .navigation {
   .navigation__container {
+    z-index: 8;
+
     .navigation__list {
       padding: 2.4rem;
       @include flex(column, null, center, 2.4rem);
